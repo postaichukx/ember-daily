@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport">
+    <meta content="#101112" name="theme-color">
+    <meta content="Your routines, one small step at a time. A private daily habit tracker." name="description">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+    <meta content="Ember" name="apple-mobile-web-app-title">
+    <link href="./favicon.svg" rel="icon" type="image/svg+xml">
+    <link href="./icon-192.png" rel="apple-touch-icon">
+    <link href="./manifest.webmanifest" rel="manifest">
+    <script src="./theme.js"></script>
+    <link href="./styles.css" rel="stylesheet">
+    <link href="./refinement.css" rel="stylesheet">
+    <link href="./theme.css" rel="stylesheet">
+    <title>Ember · Your daily rhythm</title>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="app"></div>
+<div id="modal-root"></div>
+<input accept=".json,application/json" hidden id="backup-file" type="file">
+<div aria-live="polite" id="toast" role="status"></div>
+<noscript>Ember needs JavaScript to save and track your routines. Please enable JavaScript in Safari.</noscript>
+<script src="./app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "ember-yourname",
+  "main": "cloudflare/worker.js",
+  "compatibility_date": "2026-09-23",
+  "workers_dev": true,
+  "vars": {
+    "AUTH_MODE": "email",
+    "OWNER_EMAIL": "you@example.com",
+    "EMAIL_FROM": "Ember <onboarding@resend.dev>"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ember-yourname-db",
+      "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID",
+      "migrations_dir": "drizzle"
+    }
+  ],
+  "build": {
+    "command": "npm run build"
+  },
+  "account_id": "REPLACE_WITH_YOUR_CLOUDFLARE_ACCOUNT_ID"
+}

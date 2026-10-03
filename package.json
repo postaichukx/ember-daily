@@ -1,0 +1,21 @@
+{
+  "name": "ember-routines",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "pretest": "npm run build",
+    "test": "node --test tests/*.test.js",
+    "start": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "db:generate": "drizzle-kit generate",
+    "predev": "npm run build",
+    "dev": "node scripts/dev.mjs --preview",
+    "prestart": "npm run build"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.10",
+    "drizzle-orm": "^0.45.2",
+    "wrangler": "^4.136.3"
+  }
+}

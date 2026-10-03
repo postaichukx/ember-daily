@@ -1,0 +1,22 @@
+.DS_Store
+.sites-runtime/
+node_modules/
+output/
+*.zip
+.playwright-cli/
+# Local secrets and per-account Cloudflare configuration
+.env*
+wrangler.jsonc
+CONTEXT.md
+*.sqlite
+
+.wrangler/
+.dev.vars*
+dist/
+
+# Generated/local data and editor files
+.sites-runtime/
+backups/
+.idea/
+source-snapshot.json
+.env.example
